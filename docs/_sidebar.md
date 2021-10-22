@@ -9,6 +9,9 @@
 * [ChronoTxt Overview](/)
 * [How to Start](./howtostart/index)
 * [Installation & Configuration](./installation/index)
+* [Training Resources](./howtostart/index)
+  * [Videos](./howtostart/index)
+  * [Tutorials](./howtostart/index)
 * [Release notes](./release-notes/index)
 
 

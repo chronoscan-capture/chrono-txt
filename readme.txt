@@ -8,4 +8,4 @@ docsify serve
 
 
 // Página
-https://chronoscan-capture.github.io/chrono-api/#/
+https://chronoscan-capture.github.io/chrono-txt/#/
