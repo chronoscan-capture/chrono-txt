@@ -69,6 +69,7 @@ The document must be set to a template using the Identify Studio in order to all
 
 ### Templates
 Templates allows to define extract objects and properties in an specific document type. Templates are global objects and can be used on any Job.
+* **Split Rules**: A template can split a document using search expressions.
 * **Classes**: A template can generate one or more classes.
 * **Reference point**: It's a text search expresion used to create sections like headers, footers and custom ones.
 * **Text Section**: It's a block of text inside a document, sections can be nested. Sections can be created as vertical or horizontal ones.
