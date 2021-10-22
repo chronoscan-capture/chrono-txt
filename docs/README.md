@@ -11,8 +11,8 @@ ChronoTxT is a set of tools to automate conversion of unstructured documents to 
 
 ### Classes
 
-Allows to define data structures for the documents we want to process. They're defined in an XML file.
-Classes also allows to configure the output format for the extraction.
+Allow to define data structures for the documents we want to process. They're defined in an XML file.
+Classes also allow to configure the output format for the extraction.
 
 ```xml
 <!-- BASIC INVOICE: Generated example template-->
@@ -65,17 +65,17 @@ ChronoTxT import files as primary source of data. Files can be splitted or joine
 
 ### Documents
 A document is a set of 1 or more pages.
-The document must be set to a template using the Identify Studio in order to allows the data extraction.
+The document must be set to a template using the Identify Studio in order to allow the data extraction.
 
 ### Templates
-Templates allows to define extract objects and properties in an specific document type. Templates are global objects and can be used on any Job.
+Templates allow to define extract objects and properties in an specific document type. Templates are global objects and can be used on any Job.
 * **Split Rules**: A template can split a document using search expressions.
 * **Classes**: A template can generate one or more classes.
 * **Reference point**: It's a text search expresion used to create sections like headers, footers and custom ones.
 * **Text Section**: It's a block of text inside a document, sections can be nested. Sections can be created as vertical or horizontal ones.
-* **Dumpers**: Are extraction objects, that allows to get data from the document and name them.
+* **Dumpers**: Are extraction objects, that allow to get data from the document and name them.
     * Labeled fiels
     * Grids
     * Full text capture
     * Address blocks
-* **Data Map**: Allows to link a dumper item with a class item allowing ChronoTxt to structure the data in the document.
+* **Data Map**: Allow to link a dumper item with a class item allowing ChronoTxt to structure the data in the document.

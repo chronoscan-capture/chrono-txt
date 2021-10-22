@@ -4,7 +4,7 @@
 
 Create a Job to process your document.
 
-Default classes for new templates: Allows to set classes for templates created on this Job.
+Default classes for new templates: Allow to set classes for templates created on this Job.
 
 Job default formats:
 * Default date Format
@@ -13,7 +13,7 @@ Job default formats:
 * Default negative numbers format
 
 Hotfolder:
-* Comming soon, allows to process files unatended.
+* Comming soon, allow to process files unatended.
 
 ### 2.- Import files into a Batch
 
@@ -27,7 +27,7 @@ You can automate the creation of batches using the ChronoCMD utility.
 
 ### 3.- Batch Split Studio
 
-Allows to set basic split rules on your Job. Usually you will create one file as one document but sometimes you need to split or join different files to create documents.
+Allow to set basic split rules on your Job. Usually you will create one file as one document but sometimes you need to split or join different files to create documents.
 
 ### 4.- Batch Identify Studio: Identify document template.
 
