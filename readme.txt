@@ -1,5 +1,5 @@
 // Update:
-// 	desde directorio chrono-txt
+// 	desde directorio chrono-api
 git deploy "comentarios"
 
 // Ejecutar servidor:
@@ -8,4 +8,4 @@ docsify serve
 
 
 // Página
-https://chronoscan-capture.github.io/chrono-txt/#/
+https://chronoscan-capture.github.io/chrono-api/#/

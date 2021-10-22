@@ -6,9 +6,10 @@
 </p>
 -->
 
-* [ChronoTxt](/)
+* [ChronoTxt Overview](/)
+* [How to Start](./howtostart/index)
+* [Installation & Configuration](./installation/index)
 * [Release notes](./release-notes/index)
-* [ChronoTxt Overview](./ChronoTxt)
 
 
 

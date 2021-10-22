@@ -1,1 +1,0 @@
-# ChronoTxt - Raw text parser
