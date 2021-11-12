@@ -7,11 +7,11 @@
 -->
 
 * [ChronoTxt Overview](/)
-* [How to Start](./howtostart/index)
 * [Installation & Configuration](./installation/index)
+* [How to Start](./howtostart/index)
 * [Reference Manual](/)
-  * [XML Data Models](./reference/xml_data_models)
-  * [Templates](./reference/xml_data_models)
+  * [Classes](./reference/xml_data_models)
+  * [Jobs](./reference/jobs)
 * [Training Resources](/)
   * [Videos](/)
   * [Tutorials](/)

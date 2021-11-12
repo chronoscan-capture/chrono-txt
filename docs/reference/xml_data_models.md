@@ -8,7 +8,6 @@ A template can have one or more classes assigned.
 
 ```xml
 <!-- BASIC INVOICE: Generated example template-->
-
 <Invoice>
 	<Header>
 		<SupplierId type="xs:string" link_to_template="1" mandatory="1" notes="Value used to identify the invoice generator"/>
@@ -47,12 +46,71 @@ A template can have one or more classes assigned.
 |Attribute|Value|Description|
 |--------|----------|-----------|
 |**label**|Any string|Label to show on the interface when refering to this node|
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
 |**type**|xs:string|Set this node as a string container|
 |**type**|xs:decimal|Set this node as a number with decimals container, ChonoTxT will always store decimal numbers with dot (.) as decimal separator.|
 |**type**|xs:date|Set this node as a date container, ChronoTxT store dates in YYYY/MM/DD format|
 |**type**|currencyiso3|Currency in ISO3 format|
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
 |**mandatory**|0|Optional node, can contain or not a value on final XML|
 |**mandatory**|1|If node is set as mandatory, a value must be set or an error will be logged|
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
 |**minoccur**|0..n|Number of times node must appear on output XML, if 0 the node is optional|
 |**maxoccur**|0..infinite|Maximun number of times node must appear on output XML|
-|**repeatingnode**|1|Indicates that this node can be repeated on the output (for grids and tables export)|
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
+|**repeatingnode**|1|Indicates that this node can be repeated on the output (ex: grids and tables export)|
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
+|**default_value**|%template_name%||
+|**default_value**|%default_currency%||
+|**default_value**|%$DLR.item.subitem%||
+|**default_value**|%parse_errors%||
+|**default_value**|%parse_warnings%||
+|**default_value**|%class_name%||
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
+|**conv_fun**|firstline||
+|**conv_fun**|lastline||
+|**conv_fun**|removecr||
+|**conv_fun**|removespaces||
+|**conv_fun**|toupper||
+|**conv_fun**|tolower||
+|**conv_fun**|trim||
+|**conv_fun**|trimleft||
+|**conv_fun**|trimright||
+|**conv_fun**|replace\|a\|b\|||
+|**conv_fun**|abs||
+|**conv_fun**|deleteifpositiveamount||
+|**conv_fun**|deleteifnegativeamount||
+|**conv_fun**|deleteifpositiveamount;abs||
+|**conv_fun**|toupper;trim;removecr;||
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
+|**val_fun**|mustBeZero||
+|**val_fun**|mustBeEqual(//Main/MyNode)||
+
+|Attribute|Value|Description|
+|--------|----------|-----------|
+|**map_to**|$count$//Statement/xgridroot1/xgridrecord1/DebitAmount||
+|**map_to**|$sum$//Statement/xgridroot1/xgridrecord1/DebitAmount||
+|**map_to**|$sum$//Statement/xgridroot1/xgridrecord1/CreditAmount||
+|**map_to**|$subtract$//Statement/Calculated/TotalDebit\|//Statement/Calculated/TotalCredit||
+|**map_to**|$subtract$//Statement/Calculated/TotalBalanceLines\|//Statement/ClosingBalance||
+
+
+## Mapping dictionaries
+
+Mapping dictionaries helps users assigning the extracted data to the correct XML nodes.
+
+Mapping dictionaries are creaded dinamically while mapping data on the DLR window.
